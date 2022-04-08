@@ -11,10 +11,36 @@
             padding-left: 15px;
             margin-left: 15px;
             padding-bottom: 15px;
-            float: right;
+            float: left;
             font-style: italic;
             background-color: lightgray;
         }
+
+        .icon{
+            display: inline-block;
+            font-size: 44px;
+            animation: float 5s timing-functi ease-in-out infinite;
+        }
+        .ri-facebook-circle-line{
+            animation-delay: 1s;
+        }
+
+        .ri-whatsapp-line{
+            animation-delay: 1s;
+        }
+
+        @keyframes float{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-15px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+        
     </style>
 
     <!--
@@ -25,6 +51,14 @@
 </head>
 
 <body>
+    <figure>
+        <!-- 
+            Para el audio utilizamos audio, en este haria falta poner el type y controls (autoplay,loop...)
+            Para video pues video, hace falta type (codecs..) 
+        -->
+        <img src="download.jpg">
+        <figcaption>Programmer cat</figcaption>
+    </figure>
     <!-- 
         header: 
         -logotipo
@@ -34,7 +68,7 @@
     -->
     <header>
         <!-- nav para menu always -->
-        <nav>
+        <nav >
             <ul>
                 <li><a
                         href="https://www.bing.com/images/search?view=detailV2&ccid=GU5VEyJC&id=180A91B25707E068B8B95579C9AFA13C42C68B12&thid=OIP.GU5VEyJC2H9mlcK4Fd0ACwHaDW&mediaurl=https%3a%2f%2flos40mx00.epimg.net%2flos40%2fimagenes%2f2019%2f08%2f09%2fviral%2f1565306058_998861_1565306574_gigante_normal.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.194e55132242d87f6695c2b815dd000b%3frik%3dEovGQjyhr8l5VQ%26pid%3dImgRaw%26r%3d0&exph=762&expw=1680&q=memes+gatitos&simid=607988836204873384&FORM=IRPRST&ck=032AA8019C3F50BF8C953F23951CE643&selectedIndex=33">
@@ -61,13 +95,12 @@
 
     <section>
         <article>
-            <span>Una frase que sera lineal</span>
+            <span><h2>Una frase que sera lineal</h2></span>
             <P>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tortor diam, volutpat eget nunc placerat,
                 posuere dictum ante. In fringilla
-                lectus aliquam leo vehicula, ut pellentesque orci dapibus. <span>Proin maximus dolor nisl, a congue
-                    lorem
-                    sollicitudin in.</span> Quisque pharetra fringilla turpis et commodo.
+                lectus aliquam leo vehicula, ut pellentesque orci dapibus. <span>Proin maximus dolor nisl, a congue lorem
+                sollicitudin in.</span> Quisque pharetra fringilla turpis et commodo.
                 Nullam gravida lorem in nibh dignissim, pulvinar elementum libero
                 tincidunt. <strong>Curabitur vitae gravida felis.</strong>
                 Quisque luctus odio felis, placerat sodales massa mollis id. <em>Mauris tristique mollis lobortis.</em>
@@ -79,24 +112,18 @@
                 Quisque eleifend cursus finibus.
                 Etiam pellentesque velit et lacus mollis dictum.
             </P>
-            <p>
-                SDonec eu mauris a neque sagittis vehicula. Praesent condimentum odio sed massa maximus placerat. Nunc
-                eu
-                ultricies dui, quis efficitur leo.
-                Morbi non nunc imperdiet, sagittis enim nec, vehicula odio. Proin mollis, nisl nec ultrices ullamcorper,
-                neque magna tristique libero, et vulputate eros neque in arcu.
-                Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam tristique dui ut augue fringilla
-                tincidunt. Donec purus massa, egestas quis pretium in, varius ac nunc.
-                Duis finibus, felis eget ultrices tincidunt, velit tellus tincidunt est, et eleifend arcu erat vel odio.
-                Mauris eu semper nunc. Praesent posuere, erat id lacinia vehicula,
-                sapien metus vestibulum orci, cursus fringilla arcu mi eu dolor. Nunc fermentum urna malesuada dictum
-                consectetur. Morbi at magna sem. Nullam porttitor ex in efficitur rutrum.
-            </p>
         </article>
     </section>
 
+    <form id="form" name="form" method="post" action="">
+        <span>Escribe lo que quieras.</span>
+        <input id="text" type="text" name="text"
+        placeholder="Escribe aquí" onfocus="if(this.placeholder == '')this.placeholder = 'Escribe aquí'"/>
+        <input type="submit" name="Sibmit" id="button" value="OK"/>
+    </form>
+
     <section id="ejemplo">
-        <p>Objetivo</p>
+        <h2>Epcot</h2>
         <article>
             <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had
                 a great summer together with my family!</p>
@@ -110,8 +137,11 @@
     </section>
 
     <footer>
-
+        <i class="ri-instgram-line icon"></i>
+        <i class="ri-facebook-circle-line icon"></i>
+        <i class="ri-whatsapp-line icon"></i>
     </footer>
+
 </body>
 
 </html>
