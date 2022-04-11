@@ -1,0 +1,87 @@
+header h2,
+h3{
+    color: green;
+}
+
+/*
+p#azul{
+    color: orange;
+}
+
+.prueba{
+    color: green;
+}
+.grande{
+    font-size: 20px;
+}
+*/
+
+/*A TODO PARRAFO QUE TENGA UN PARRAFO ANTES CUANDO QUERAMOS CAMBIAR ALGO MENOS LO PRIMER0
+p+p{
+  font-weight: bolder;  
+}
+*/
+
+ /*Todos los hijo p de div, parrafos que sean hijos directos de div*/
+div > p {
+   color: red; 
+}
+
+/*Todos parrafos que sean hermano menos de un parrafo*/
+p ~ p {
+    color: green;
+}
+
+/* 
+
+Segun atributo, este tiene atributo title solo cambiara con el atributo especifico
+
+h2[title]{
+    color: red;
+}
+*/
+
+/*Para cuando existan mas h2 con ese titulo*/
+h2[title ~= "otro"]{
+    color: red;
+}
+
+/* Cambiarla lo que tenga el lenguaje especificado*/
+h2[lang |= "es"]{
+    color: blue;
+}
+
+div{
+    font-size: 50px;
+}
+
+article p{
+    font-size: 20px;
+}
+
+#grisaceo{
+    color: gray;
+}
+
+.naranja{
+    color: orange;
+}
+
+.rojo{
+    color: red !important;
+}
+
+/*
+    colision de estilos, orden de aplicación
+
+
+    1- css del navegador
+    2- css del usuario
+    3- archivos css enlazados en el orden añadidos
+    4- propiedades que se heredan
+    5- propiedades propias del elemento
+    6- clases asignadas, y en el mismo orden
+    7- identificador
+    8- !important venga lo que venga despues al poner important es lo mas importante
+
+*/

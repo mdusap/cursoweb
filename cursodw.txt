@@ -1,0 +1,28 @@
+
+*******************************************APUNTES CURSO************************************
+*******************************************DISEÑO WEB   ************************************
+
+- Hay que noramlizar los estilos antes de empezar con el codigo.
+- Por que cada navegador es diferente y entonces se vera todo diferente.
+- Existen prefijos para cada navegador que hay que utilizar.
+- Se utiliza id para un unico elemento. 
+- Para llamar a una clase hay que poner .nombreclase.
+- Colision de estilos, orden de aplicación
+    1- css del navegador
+    2- css del usuario
+    3- archivos css enlazados en el orden añadidos
+    4- propiedades que se heredan
+    5- propiedades propias del elemento
+    6- clases asignadas, y en el mismo orden
+    7- identificador
+    8- !important venga lo que venga despues al poner important es lo mas importante
+- Unidades de medida relativas
+	* em, ex, px, rem
+- Unidades de medida absolutas
+	* in, cm, mm, pt, pc
+- Medidas porcentuales
+ 	Son como relativas
+- Colores, apuntes en los mismos archivos creados.
+    * Para cuando no exista una palabra para el color, rgb red green blue, colores a traves de la luz.
+    * Para sacar de rgb a hexa conviertes los numeros de rgb a hexa.
+

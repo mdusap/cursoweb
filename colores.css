@@ -1,0 +1,42 @@
+
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+/*El numero final*/
+.hsl_transparencia{
+    background: hsla(127,50%,20%, 0.8);
+}
+
+/*El numero final*/
+.rgb_transparencia{
+    background: rgba(127,51,191, 0.5);
+}
+
+/*Con la misma palabra del color*/
+.reservadas{
+    background: Lime;
+}
+
+/*Colores con rgb decimal, cambio de color a traves de la luz*/
+.luzRGB{
+    background: rgb(100, 48, 5);
+}
+
+/*Colores con hexadecimal como rgb, cambia la forma de numerarlo*/
+.hex{
+    background: #643005;
+}
+
+/*Parecido al decimal, con porcentajes de cada luz*/
+.porcentual{
+    background: rgb(50%,25%,75%);
+}
+
+/*Hue, el tono del color, segun cuanta luz y saturacion, hue saturation y lightness*/
+.hsl{
+    background: hsl(120,50%,20%);
+}
