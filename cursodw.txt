@@ -1,7 +1,7 @@
 
 *******************************************APUNTES CURSO************************************
 *******************************************DISEÑO WEB   ************************************
-
+HTML5,CSS3
 - Hay que noramlizar los estilos antes de empezar con el codigo.
 - Por que cada navegador es diferente y entonces se vera todo diferente.
 - Existen prefijos para cada navegador que hay que utilizar.
@@ -25,4 +25,5 @@
 - Colores, apuntes en los mismos archivos creados.
     * Para cuando no exista una palabra para el color, rgb red green blue, colores a traves de la luz.
     * Para sacar de rgb a hexa conviertes los numeros de rgb a hexa.
+- Hover: Cuando pones raton encima. Esta en pseudo.
 

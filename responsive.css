@@ -1,0 +1,46 @@
+
+body{
+    background: orange;
+}
+/*Es mejor usar porcentajes*/
+div{
+    width: 80%;
+    height: 150px;
+    margin: 8%;
+    display: inline-block;
+    background: white;
+}
+
+/*Móvil*/
+@media screen and (min-width: 480px){
+
+    body{
+        background: #34A647;
+    }
+
+}
+
+/*Tablet*/
+@media screen and (min-width: 767px){
+
+    body{
+        background: #34A2A6;
+    }
+    div{
+        width: 40%;
+        margin: 4%;
+    }
+}
+
+/*Pantalla de escritorio*/
+@media screen and (min-width: 950px){
+
+    body{
+        background: #A76A9E;
+    }
+    div{
+        width: 28%;
+        margin: 2%;
+    }
+    
+}

@@ -1,0 +1,47 @@
+/*
+Seguiran siempre al elemento
+no son seleccionables por el usuario
+Before: Es usado normalmente para añadir contenido estético a un elemento, usando la propiedad content.
+ */
+p{
+    position: relative;
+}
+p:before{
+    content: "-";
+    /*Siempre hay que ponerlo*/
+    position: relative;
+}
+/*Como el before*/
+p:after{
+    content: "Este es un saludo: ";
+    top: 50px;
+    position: relative;
+    left: -80px;
+}
+
+/*Pseudoelemento: Es algo visual*/
+/*Pseudoclase:  Selector que marca los elementos que están en un estado específico.*/
+
+a#link1:link{ /*Link pendiente de visitar*/
+    color: green;
+}
+
+a#link2:visited{/*Link visitado*/
+    color: red;
+    font-size: 20px;
+}
+/*Hover para cambie algun componente al posar el raton por encima del elemento*/
+p:hover{
+    color: green;
+    font-size: 20px;
+    font-weight: bolder;
+}
+/*Cambia algun elemento del componente al clickar el elemento pero al dejar de clickar vuelve a su estado original*/
+span:active{
+    color: aqua;
+}
+
+/*Cuando se clicka algun elemento*/
+input:focus{
+    border-radius: 20px;
+}
